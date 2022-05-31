@@ -45,9 +45,10 @@ export default function Home() {
 
         <div className="h-80 bg-[#F3F3F3] mt-24 mb-12 flex flex-col justify-center items-center">
           <p className="text-4xl">
-            There’s a yogi in all of us, and you’re next. Get down with yoga.
+            Begin Your Journey To A Better Life With Peace, Love, Beauty, And
+            Happiness
           </p>
-          <button className="mt-8 text-lg px-4 py-3 leading-none border-2 rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black">
+          <button className="mt-8 text-2xl font-bold px-6 py-4 leading-none border-2 rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black">
             Get in Touch
           </button>
         </div>
