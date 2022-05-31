@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { HomeActivities } from "@/components/HomeActivities";
-import profilePic from '../../public/images/main-image.jpeg'
+import mainImagePic from '../../public/images/main-image.jpg'
 
 export default function Home() {
   return (
@@ -26,8 +26,7 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
             quality={100}
-            src={profilePic}
-            // blurDataURL="/images/main-image.jpeg"
+            src={mainImagePic}
             placeholder="blur"
             alt="main image"
           />

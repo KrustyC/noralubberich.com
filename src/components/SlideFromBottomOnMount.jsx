@@ -1,8 +1,8 @@
-import { animated, useTransition } from "react-spring";
+import { animated, config, useTransition } from "react-spring";
 
 export const SlideFromBottomOnMount = ({ className = "", show, children }) => {
   const transition = useTransition(show, {
-    config: { duration: 650 },
+    config: config.molasses,
     from: { y: 250, opacity: 0 },
     enter: { y: 0, opacity: 1 },
   });
