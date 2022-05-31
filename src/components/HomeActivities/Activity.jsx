@@ -11,21 +11,22 @@ export const Activity = ({ imgSrc, label }) => {
 
   return (
     <div ref={elemRef} className="activity">
-      <SlideFromBottomOnMount show={isVisible}>
-        <div className="relative w-full h-full">
-          <Image
-            src={imgSrc}
-            alt={label}
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
+      <SlideFromBottomOnMount
+        className="relative h-full w-full"
+        show={isVisible}
+      >
+        <Image
+          src={imgSrc}
+          alt={label}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
 
-          <div className="absolute top-[300px] left-[50px]">
-            <p className="underline uppercase font-bold text-4xl text-white">
-              {label}
-            </p>
-          </div>
+        <div className="absolute top-[300px] left-[50px]">
+          <p className="underline uppercase font-bold text-4xl text-white">
+            {label}
+          </p>
         </div>
       </SlideFromBottomOnMount>
     </div>
