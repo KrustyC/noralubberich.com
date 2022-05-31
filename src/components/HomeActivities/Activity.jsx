@@ -3,11 +3,9 @@ import Image from "next/image";
 import { useIsVisible } from "@/hooks/useIsVisible";
 import { SlideFromBottomOnMount } from "@/components/SlideFromBottomOnMount";
 
-export const Activity = ({ imgSrc, label }) => {
+export const Activity = ({ imgSrc, blurImageSrc, label }) => {
   const elemRef = useRef();
   const isVisible = useIsVisible(elemRef);
-
-  console.log(`IS VISIBLE ${label}?`, isVisible);
 
   return (
     <div ref={elemRef} className="activity">
@@ -18,6 +16,7 @@ export const Activity = ({ imgSrc, label }) => {
         <Image
           src={imgSrc}
           alt={label}
+          placeholder="blur"
           layout="fill"
           objectFit="cover"
           quality={100}
