@@ -53,7 +53,7 @@ export default function Home() {
             Begin Your Journey To A Better Life With Peace, Love, Beauty, And
             Happiness
           </p>
-          <button className="mt-8 text-2xl font-bold px-6 py-4 leading-none border-2 rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black">
+          <button className="mt-8 text-2xl font-bold px-8 py-4 leading-none border-2 rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black">
             Get in Touch
           </button>
         </div>
