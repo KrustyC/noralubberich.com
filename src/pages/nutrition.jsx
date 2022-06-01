@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import nutritionPic from "../../public/images/nutrition.jpeg";
 
 export default function NutritionPage() {
   return (
@@ -20,9 +22,25 @@ export default function NutritionPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col h-[650px] justify-center items-center">
-        <h1>Nutrition</h1>
-        <p className="text-xl mt-8">Page under costruction...</p>
+      <div className="flex flex-col">
+        <div className="relative h-[700px] w-screen">
+          <Image
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            src={nutritionPic}
+            placeholder="blur"
+            alt="main image"
+          />
+        </div>
+
+        <div className="page">
+          <h1>Nutrition</h1>
+
+          <div className="text-2xl mt-12">
+            <p>Coming soon - stay tuned.</p>
+          </div>
+        </div>
       </div>
     </div>
   );

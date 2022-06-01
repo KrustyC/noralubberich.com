@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Activities } from "@/components/Activities";
 import mainImagePic from "../../public/images/main-image.jpg";
 
@@ -49,13 +50,13 @@ export default function Home() {
         <Activities />
 
         <div className="h-80 bg-[#F3F3F3] my-60 mb-12 flex flex-col justify-center items-center">
-          <p className="text-4xl">
-            Begin Your Journey To A Better Life With Peace, Love, Beauty, And
-            Happiness
+          <p className="text-3xl text-center">
+            Realize deeply that the present moment is all you have. Make the NOW
+            the primary focus of your life.
           </p>
-          <button className="mt-8 text-2xl font-bold px-8 py-4 leading-none border-2 rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black">
-            Get in Touch
-          </button>
+          <Link href="/get-in-touch">
+            <a className="mt-8 button-link big">Get in Touch</a>
+          </Link>
         </div>
       </div>
     </div>

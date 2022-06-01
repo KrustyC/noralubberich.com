@@ -22,7 +22,7 @@ export const Activities = () => {
     },
   }));
 
-  const springs = useSprings(4, configs);
+  const springs = useSprings(3, configs);
 
   useEffect(() => {
     if (isVisible && !open) {
