@@ -6,9 +6,14 @@ const newColors = {
 };
 
 module.exports = {
+  mode: 'jit',
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  purge: [
+    './public/**/*.html',
+    './src/**/*.{js,jsx}',
   ],
   theme: {
     screens: {

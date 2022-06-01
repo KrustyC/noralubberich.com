@@ -5,19 +5,33 @@ import { ACTIVITIES } from "@/utils/constants";
 
 import { Activity } from "./Activity";
 
+function getMarginTop(index) {
+  if (index === 0) {
+    return "mt-0";
+  }
+
+  if (index === 1) {
+    return "mt-40";
+  }
+
+  if (index === 2) {
+    return "mt-[-150px]";
+  }
+}
+
 export const Activities = () => {
   const ref = useRef();
   const isVisible = useIsVisible(ref, 0.2);
   const [open, setOpen] = useState(false);
 
   const configs = ACTIVITIES.map((item, i) => ({
-    delay: 500 * i,
-    config: config.gentle,
-    from: { opacity: 0, x: 50, y: 400 },
+    delay: 400 * i,
+    config: config.wobbly,
+    from: { opacity: 0, x: 20 },
     to: {
       opacity: open ? 1 : 0,
-      x: open ? 0 : 50,
-      y: open ? 0 : 400,
+      x: open ? 0 : 20,
+
       transform: "translateY(0px)",
     },
   }));
@@ -31,7 +45,10 @@ export const Activities = () => {
   }, [isVisible, open]);
 
   return (
-    <section ref={ref} className="px-4 md:px-8 lg:px-60 grid grid-cols-1 md:grid-cols-2 gap-16">
+    <section
+      ref={ref}
+      className="px-4 py-24 md:px-16 xl:px-12 lg:px-24 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8"
+    >
       {springs.map(({ ...style }, i) => {
         const { label, pic, href } = ACTIVITIES[i];
 

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const Activity = ({ label, href, imgSrc }) => (
+export const Activity = ({ index,label, href, imgSrc }) => (
   <Link href={href}>
     <a>
-      <div className="h-[350px] md:h-[650px] w-full relative">
+      <div className="h-[350px] md:h-[450px] w-full relative">
         <Image
           src={imgSrc}
           alt={label}

@@ -36,7 +36,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="py-12 md:py-60">
+        <div className="py-12 md:py-60 bg-[#FEECF6]">
           <p className="text-2xl md:text-3xl w-10/12 lg:w-7/12 mx-auto font-bold py-8">
             {'"'}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             pretium gravida libero, ac ullamcorper purus ultricies id.
@@ -49,7 +49,7 @@ export default function Home() {
 
         <Activities />
 
-        <div className="h-80 bg-[#F3F3F3] my-12 lg:my-60 mb-12 flex flex-col justify-center items-center">
+        <div className="h-80 bg-[#F3F3F3] flex flex-col justify-center items-center">
           <p className="text-2xl md:text-3xl text-center px-4">
             Realize deeply that the present moment is all you have. Make the NOW
             the primary focus of your life.
