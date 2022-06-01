@@ -1,14 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
-import { HomeActivities } from "@/components/HomeActivities";
-import mainImagePic from '../../public/images/main-image.jpg'
+import { Activities } from "@/components/Activities";
+import mainImagePic from "../../public/images/main-image.jpg";
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Nora Lubberich</title>
-        <meta name="description" content="Nors Lubberich personal website | Yoga practitioner" />
+        <meta
+          name="description"
+          content="Nors Lubberich personal website | Yoga practitioner"
+        />
 
         <meta property="og:title" content="Nora Lubberich" />
         <meta property="og:type" content="website" />
@@ -32,7 +35,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="py-16">
+        <div className="py-60">
           <p className="text-3xl w-7/12 mx-auto font-bold">
             {'"'}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             pretium gravida libero, ac ullamcorper purus ultricies id.
@@ -43,9 +46,9 @@ export default function Home() {
           </p>
         </div>
 
-        <HomeActivities />
+        <Activities />
 
-        <div className="h-80 bg-[#F3F3F3] mt-24 mb-12 flex flex-col justify-center items-center">
+        <div className="h-80 bg-[#F3F3F3] my-60 mb-12 flex flex-col justify-center items-center">
           <p className="text-4xl">
             Begin Your Journey To A Better Life With Peace, Love, Beauty, And
             Happiness

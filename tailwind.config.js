@@ -30,6 +30,9 @@ module.exports = {
       primary: ["Libre Caslon Display", "serif"],
     },
     extend: {
+      gridTemplateRows: {
+        activitiesGrid: "repeat(7, 200px)",
+      },
       keyframes: {
         wiggle: {
           "0%, 100%": { transform: "translateX(-8deg)" },
