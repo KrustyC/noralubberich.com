@@ -31,7 +31,7 @@ export const Activities = () => {
   }, [isVisible, open]);
 
   return (
-    <section ref={ref} className="px-8 lg:px-60 grid grid-cols-2 gap-16">
+    <section ref={ref} className="px-4 md:px-8 lg:px-60 grid grid-cols-1 md:grid-cols-2 gap-16">
       {springs.map(({ ...style }, i) => {
         const { label, pic, href } = ACTIVITIES[i];
 

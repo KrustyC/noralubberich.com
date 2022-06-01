@@ -41,7 +41,12 @@
   }
 
   .page {
-    @apply px-80 py-16 flex flex-col;
+    @apply w-10/12 md:w-8/12 xl:w-6/12  mx-auto py-8 lg:py-16 flex flex-col;
+    /* @apply px-8 md:px-24 lg:px-32 xl:px-60 py-8 lg:py-16 flex flex-col; */
+  }
+
+  .header {
+    @apply relative h-[450px] lg:h-[700px] w-screen;
   }
 
   a.animated-link {

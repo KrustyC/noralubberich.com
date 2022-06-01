@@ -24,7 +24,7 @@ export default function YogaPage() {
       </Head>
 
       <div className="flex flex-col">
-        <div className="relative h-[700px] w-screen">
+        <div className="header">
           <Image
             layout="fill"
             objectFit="cover"

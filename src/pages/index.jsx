@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
 
       <div className="flex flex-col">
-        <div className="relative h-[700px] w-screen">
+        <div className="header">
           <Image
             layout="fill"
             objectFit="cover"
@@ -36,21 +36,21 @@ export default function Home() {
           />
         </div>
 
-        <div className="py-60">
-          <p className="text-3xl w-7/12 mx-auto font-bold">
+        <div className="py-12 md:py-60">
+          <p className="text-2xl md:text-3xl w-10/12 lg:w-7/12 mx-auto font-bold py-8">
             {'"'}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             pretium gravida libero, ac ullamcorper purus ultricies id.
             Suspendisse tincidunt est sed nisl imperdiet blandit. Quisque nec
             justo commodo, vulputate ex at, eleifend mauris. Morbi lobortis diam
             sed ex rhoncus interdum. Praesent tincidunt ornare risus, quis
-            sodales sem bibendum eget. {'"'}
+            sodales sem bibendum eget.{'"'}
           </p>
         </div>
 
         <Activities />
 
-        <div className="h-80 bg-[#F3F3F3] my-60 mb-12 flex flex-col justify-center items-center">
-          <p className="text-3xl text-center">
+        <div className="h-80 bg-[#F3F3F3] my-12 lg:my-60 mb-12 flex flex-col justify-center items-center">
+          <p className="text-2xl md:text-3xl text-center px-4">
             Realize deeply that the present moment is all you have. Make the NOW
             the primary focus of your life.
           </p>
