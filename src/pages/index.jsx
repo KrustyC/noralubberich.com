@@ -11,7 +11,7 @@ export default function Home() {
         <title>Nora Lubberich</title>
         <meta
           name="description"
-          content="Nors Lubberich personal website | Yoga practitioner"
+          content="Nora Lubberich personal website | Wellbeing Consultant"
         />
 
         <meta property="og:title" content="Nora Lubberich" />

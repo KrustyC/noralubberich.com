@@ -10,7 +10,7 @@ export default function YogaPage() {
         <title>Nora Lubberich | Yoga</title>
         <meta
           name="description"
-          content="Nors Lubberich personal website | Yoga"
+          content="Nora Lubberich personal website | Yoga"
         />
 
         <meta property="og:title" content="Nora Lubberich | Yoga" />

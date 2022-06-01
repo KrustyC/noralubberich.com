@@ -9,7 +9,7 @@ export default function CorporateWellnessPage() {
         <title>Nora Lubberich | Corporate Wellness</title>
         <meta
           name="description"
-          content="Nors Lubberich personal website | Corporate Wellness"
+          content="Nora Lubberich personal website | Corporate Wellness"
         />
 
         <meta property="og:title" content="Nora Lubberich" />

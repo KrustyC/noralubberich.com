@@ -9,7 +9,7 @@ export default function NutritionPage() {
         <title>Nora Lubberich | Nutrition</title>
         <meta
           name="description"
-          content="Nors Lubberich personal website | Nutrition"
+          content="Nora Lubberich personal website | Nutrition"
         />
 
         <meta property="og:title" content="Nora Lubberich" />

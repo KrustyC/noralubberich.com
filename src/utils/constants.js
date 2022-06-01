@@ -3,10 +3,10 @@ import corporateWellnessPic from "../../public/images/home-corporate-wellness.jp
 import nutritionPic from "../../public/images/nutrition.jpeg";
 
 export const PAGE_LINKS = [
-  { label: "About Me", to: "about-me" },
-  { label: "Corporate Wellness", to: "corporate-wellness" },
-  { label: "Yoga", to: "yoga" },
-  { label: "Nutrition", to: "nutrition" },
+  { label: "About Me", to: "/about-me" },
+  { label: "Corporate Wellness", to: "/corporate-wellness" },
+  { label: "Yoga", to: "/yoga" },
+  { label: "Nutrition", to: "/nutrition" },
 ];
 
 export const ACTIVITIES = [

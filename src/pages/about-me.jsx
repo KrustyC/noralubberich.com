@@ -9,7 +9,7 @@ export default function AboutMePage() {
         <title>Nora Lubberich | About Me</title>
         <meta
           name="description"
-          content="Nors Lubberich personal website | About Me"
+          content="Nora Lubberich personal website | About Me"
         />
 
         <meta property="og:title" content="Nora Lubberich" />

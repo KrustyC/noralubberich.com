@@ -7,7 +7,7 @@ export default function GetInTouchPage() {
         <title>Nora Lubberich | Get In Touch</title>
         <meta
           name="description"
-          content="Nors Lubberich personal website | Get In Touch"
+          content="Nora Lubberich personal website | Get In Touch"
         />
 
         <meta property="og:title" content="Nora Lubberich" />
