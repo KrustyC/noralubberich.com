@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 
@@ -6,23 +5,36 @@ const ErrorLabel = ({ message }) => (
   <p className="text-red-500 text-xs font-bold">{message}</p>
 );
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export const ContactForm = () => {
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const [data, setData] = useState("");
 
   const onSubmit = (data) => {
-    setData(JSON.stringify(data));
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...data }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
   };
 
   return (
     <form
+      name="contact"
       className="w-full lg:w-8/12 flex flex-col justify-center"
       onSubmit={handleSubmit(onSubmit)}
     >
+      <input type="hidden" name="form-name" value="contact" />
       <div className="form-input mb-3">
         <label htmlFor="fullName" className="form-label">
           Full Name
