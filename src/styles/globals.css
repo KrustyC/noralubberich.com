@@ -75,4 +75,24 @@
   a.animated-link:focus::after {
     transform: translate3d(0, 0, 0);
   }
+
+  .form-input {
+    @apply w-full mb-6 md:mb-0;
+  }
+
+  .form-label {
+    @apply block tracking-wide text-black text-lg font-bold;
+  }
+
+  input {
+    @apply appearance-none block w-full bg-white text-gray-700 border-gray-400 hover:border-gray-800 border-b-2 py-2 mb-1 leading-tight focus:outline-none;
+  }
+
+  textarea {
+    @apply appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-2 mb-1 leading-tight focus:outline-none;
+  }
+
+  .inpute-error {
+    @apply border-red-500;
+  }
 }
