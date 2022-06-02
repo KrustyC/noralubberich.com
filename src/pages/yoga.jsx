@@ -38,7 +38,7 @@ export default function YogaPage() {
         <div className="page">
           <h1>Yoga</h1>
 
-          <div className="text-2xl mt-12">
+          <div className="text-2xl mt-8">
             <p>
               Yoga is more than just a routine to improve physical health – it
               is a lifestyle choice and a spiritual practice that has been

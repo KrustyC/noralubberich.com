@@ -37,7 +37,7 @@ export default function CorporateWellnessPage() {
         <div className="page">
           <h1>Corporate Wellness</h1>
 
-          <div className="text-2xl mt-12">
+          <div className="text-2xl mt-8">
             <p>
               Over the last couple of years there has been a positive shift in
               the way organisations are approaching the health and wellbeing of

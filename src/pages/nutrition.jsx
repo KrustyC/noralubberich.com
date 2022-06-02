@@ -37,7 +37,7 @@ export default function NutritionPage() {
         <div className="page">
           <h1>Nutrition</h1>
 
-          <div className="text-2xl mt-12">
+          <div className="text-2xl mt-8">
             <p>Coming soon - stay tuned.</p>
           </div>
         </div>

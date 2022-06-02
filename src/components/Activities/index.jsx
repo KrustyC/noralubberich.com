@@ -47,15 +47,20 @@ export const Activities = () => {
   return (
     <section
       ref={ref}
-      className="px-4 py-24 md:px-16 xl:px-12 lg:px-24 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8"
+      className="px-8 py-20 lg:py-32 md:px-16 lg:px-24 xl:px-32 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-20 lg:gap-16"
     >
       {springs.map(({ ...style }, i) => {
-        const { label, pic, href } = ACTIVITIES[i];
+        const { label, pic, href, description } = ACTIVITIES[i];
 
         return (
           <animated.div key={i} style={style}>
             <animated.div>
-              <Activity label={label} href={href} imgSrc={pic} />
+              <Activity
+                label={label}
+                href={href}
+                imgSrc={pic}
+                description={description}
+              />
             </animated.div>
           </animated.div>
         );

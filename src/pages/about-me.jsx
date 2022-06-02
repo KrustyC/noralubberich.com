@@ -37,7 +37,7 @@ export default function AboutMePage() {
         <div className="page">
           <h1>About Me</h1>
 
-          <div className="text-2xl mt-12">
+          <div className="text-2xl mt-8">
             <p>Hi, I’m Nora.</p>
             <p className="mt-8">
               I’m a Wellbeing consultant, yoga and mindfulness teacher and soon
