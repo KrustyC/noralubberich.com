@@ -89,7 +89,11 @@
   }
 
   textarea {
-    @apply appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-2 mb-1 leading-tight focus:outline-none;
+    @apply appearance-none block w-full px-2 bg-gray-100 text-gray-700 border rounded py-2 mb-1 leading-tight focus:outline-none;
+  }
+
+  .error-label {
+    @apply text-red-500 text-sm font-bold;
   }
 
   .inpute-error {
