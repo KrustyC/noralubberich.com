@@ -1,5 +1,15 @@
-export const MeditationIllustration = ({ className = "h-full w-full" }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 985 692.97">
+interface MeditationIllustrationProps {
+  className?: string;
+}
+
+export const MeditationIllustration: React.FC<MeditationIllustrationProps> = ({
+  className = "h-full w-full",
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    viewBox="0 0 985 692.97"
+  >
     <defs>
       <linearGradient
         id="62e9b6da-24f7-4061-9c04-454aab4390a5-54"

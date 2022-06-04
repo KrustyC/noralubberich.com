@@ -1,4 +1,10 @@
-export const MessageIllustration = ({ className = "h-full w-full" }) => (
+interface MessageIllustrationProps {
+  className?: string;
+}
+
+export const MessageIllustration: React.FC<MessageIllustrationProps> = ({
+  className = "h-full w-full",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={className}

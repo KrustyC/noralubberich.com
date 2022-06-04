@@ -1,11 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, RefObject } from "react";
 
 const OPTIONS = {
   root: null,
   rootMargin: "0px 0px 0px 0px",
 };
 
-export const useIsVisible = (elementRef, threshold = 0.1) => {
+export const useIsVisible = (
+  elementRef: RefObject<HTMLElement>,
+  threshold = 0.1
+) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -15,7 +18,9 @@ export const useIsVisible = (elementRef, threshold = 0.1) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               setIsVisible(true);
-              observer.unobserve(elementRef.current);
+              if (elementRef.current) {
+                observer.unobserve(elementRef.current);
+              }
             }
           });
         },

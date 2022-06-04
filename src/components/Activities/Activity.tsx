@@ -1,7 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import { StaticImageData } from "next/image";
 
-export const Activity = ({ description, label, href, imgSrc }) => (
+interface ActivityProps {
+  description: string;
+  label: string;
+  href: string;
+  imgSrc: StaticImageData;
+}
+
+export const Activity: React.FC<ActivityProps> = ({
+  description,
+  label,
+  href,
+  imgSrc,
+}) => (
   <div className="flex flex-col">
     <div className="h-[350px] md:h-[450px] w-full relative">
       <Image

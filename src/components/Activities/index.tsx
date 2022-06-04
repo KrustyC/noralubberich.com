@@ -5,7 +5,7 @@ import { ACTIVITIES } from "@/utils/constants";
 
 import { Activity } from "./Activity";
 
-function getMarginTop(index) {
+function getMarginTop(index: number) {
   if (index === 0) {
     return "mt-0";
   }
@@ -20,7 +20,7 @@ function getMarginTop(index) {
 }
 
 export const Activities = () => {
-  const ref = useRef();
+  const ref = useRef<HTMLElement>(null);
   const isVisible = useIsVisible(ref, 0.2);
   const [open, setOpen] = useState(false);
 

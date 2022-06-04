@@ -1,10 +1,21 @@
 import "../styles/globals.css";
 
+import type { AppProps } from "next/app";
 import { Transition, animated } from "@react-spring/web";
 import { Layout } from "@/components/Layout";
 import { useRouter } from "next/router";
 
-function MyApp({ Component, pageProps }) {
+import type { NextPage } from "next";
+
+export type NextPageWithLayout<T> = NextPage<T> & {
+  Layout?: React.FC<React.PropsWithChildren<unknown>>;
+};
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout<Readonly<unknown>>;
+};
+
+export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const router = useRouter();
 
   const items = [
@@ -20,7 +31,7 @@ function MyApp({ Component, pageProps }) {
       <div style={{ position: "relative" }}>
         <Transition
           items={items}
-          keys={(item) => item.id}
+          keys={(item: any) => item.id}
           from={{ opacity: 0 }}
           initial={{ opacity: 0 }}
           enter={{ opacity: 1 }}
@@ -36,5 +47,3 @@ function MyApp({ Component, pageProps }) {
     </Layout>
   );
 }
-
-export default MyApp;

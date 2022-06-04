@@ -1,11 +1,13 @@
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 
-const ErrorLabel = ({ message }) => (
+// @TODO Type form
+
+const ErrorLabel = ({ message }: { message: string }) => (
   <p className="text-red-500 text-xs font-bold">{message}</p>
 );
 
-function encode(data) {
+function encode(data: any) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
@@ -18,7 +20,7 @@ export const ContactForm = () => {
     handleSubmit,
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },

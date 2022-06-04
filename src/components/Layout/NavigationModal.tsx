@@ -2,7 +2,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { PAGE_LINKS } from "@/utils/constants";
 
-export const NavigationModal = ({ open, onNavigate }) => {
+interface NavigationModalProps {
+  onNavigate: VoidFunction;
+}
+
+export const NavigationModal: React.FC<NavigationModalProps> = ({
+  onNavigate,
+}) => {
   // Here I can use spring transition bullshit
 
   // Here also a transition for the items appearing, can copy this from somehere for sure

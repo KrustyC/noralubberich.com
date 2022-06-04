@@ -5,7 +5,7 @@ import { PAGE_LINKS } from "@/utils/constants";
 import { NavigationModal } from "./NavigationModal";
 
 export const Navbar = () => {
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState(false);
 
   const onToggleHamburger = () => {
     setOpen(!open);

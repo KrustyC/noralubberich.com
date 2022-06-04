@@ -1,4 +1,10 @@
-export const InstagramIcon = ({ className = "" }) => (
+interface InstagramIconProps {
+  className?: string;
+}
+
+export const InstagramIcon: React.FC<InstagramIconProps> = ({
+  className = "",
+}) => (
   <svg
     className={className}
     viewBox="0 0 30 30"

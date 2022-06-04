@@ -8,12 +8,12 @@ const newColors = {
 module.exports = {
   mode: 'jit',
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{ts,tsx}",
+    "./src/components/**/*.{ts,tsx}",
   ],
   purge: [
     './public/**/*.html',
-    './src/**/*.{js,jsx}',
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
     screens: {
