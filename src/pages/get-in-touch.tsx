@@ -30,7 +30,7 @@ export default function GetInTouchPage() {
           <h1 className="z-10 font-bold tracking-wider">Let{"'"}s Talk</h1>
 
           <p className="z-10 w-full lg:w-7/12 mt-3 text-2xl">
-            If you would like to have a caht, or even just to say hi, please don
+            If you would like to have a chat, or even just to say hi, please don
             {"'"}t be shy and get in touch with me. I promise I will get back to
             you soon.
           </p>
