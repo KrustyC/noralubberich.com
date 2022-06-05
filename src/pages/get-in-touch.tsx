@@ -19,7 +19,7 @@ export default function GetInTouchPage() {
           property="og:image"
           content="https://noralubberich.com/images/rock.jpg"
         />
-        <link rel="icon" href="/favicon.ico" />
+        
       </Head>
 
       <div className="flex flex-col lg:flex-row lg:h-[80vh] items-center lg:relative w-full">

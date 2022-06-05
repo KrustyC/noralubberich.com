@@ -20,7 +20,7 @@ export default function YogaPage() {
           property="og:image"
           content="https://noralubberich.com/images/rock.jpg"
         />
-        <link rel="icon" href="/favicon.ico" />
+        
       </Head>
 
       <div className="flex flex-col">
