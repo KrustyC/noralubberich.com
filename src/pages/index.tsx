@@ -35,14 +35,12 @@ export default function Home() {
           />
         </div>
 
-        <div className="py-12 md:py-60 bg-[#FEECF6]">
-          <p className="text-2xl md:text-3xl w-10/12 lg:w-7/12 mx-auto font-bold py-8">
-            {'"'}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            pretium gravida libero, ac ullamcorper purus ultricies id.
-            Suspendisse tincidunt est sed nisl imperdiet blandit. Quisque nec
-            justo commodo, vulputate ex at, eleifend mauris. Morbi lobortis diam
-            sed ex rhoncus interdum. Praesent tincidunt ornare risus, quis
-            sodales sem bibendum eget.{'"'}
+        <div className="py-12 md:py-72 bg-[#FEECF6]">
+          <p className="text-2xl md:text-3xl w-10/12 lg:w-7/12 lg:w-1/2 mx-auto font-bold">
+            {'"'}Step into the pathway with me and feel nourished, balanced and
+            empowered. Take a holistic approach to your wellbeing and find
+            connection to yourself, others and all that you do - a mindset that
+            can have real, positive effects on your life.{'"'}
           </p>
         </div>
 
